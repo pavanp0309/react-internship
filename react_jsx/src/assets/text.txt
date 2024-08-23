@@ -1,0 +1,63 @@
+
+React Basics and Styling Guide
+
+Components
+Components are the building blocks of any React application. They break the larger parts of the UI into smaller, reusable pieces. A component is essentially a JavaScript function that returns some JSX elements to construct the UI.
+
+There are two types of components:
+
+Functional Components
+Class Components
+JSX
+JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code in React. It enables the rendering of both logic and UI elements in a combined format.
+
+JSX Rules
+Single Parent Element:
+
+Every JSX expression must have one parent element. If you are nesting multiple elements, they must be wrapped under a single parent element.
+You can use either HTML elements or React fragments to wrap the elements.
+Self-Closing Tags:
+
+All JSX elements must be properly closed.
+Example: <br />, <img />, <input />, <h1></h1>
+JavaScript Expressions:
+
+When rendering JavaScript expressions inside JSX, they must be wrapped in curly braces {}.
+For strings, booleans, and numbers, use single curly braces:
+src={imageSource} alt="description" <h1>{title}</h1>
+For objects and inline styles, use double curly braces:
+style={{ backgroundColor: 'blue' }}
+
+Camel Case for Attributes:
+
+JSX attributes and style properties must be written in camelCase.
+Examples: className, htmlFor, alignItems, backgroundColor
+Conditional and Iterative Statements:
+
+Conditional and iterative statements (like if or for) cannot be rendered directly inside JSX.
+However, JSX can be rendered inside such statements.
+Use the ternary operator for conditional rendering within JSX.
+Styling in React
+React offers different ways to apply styles to components:
+
+Inline CSS / External CSS
+CSS Modules
+External Libraries:
+Bootstrap
+Tailwind CSS
+Styled-components
+Ant Design
+Chakra UI
+React-Bootstrap
+Different Ways to Write Styles in React:
+Inline CSS: Apply styles directly using the style attribute.
+External CSS: Import a CSS file and apply class names to JSX elements.
+CSS Modules: Use CSS modules for locally scoped styles.
+External Libraries: Leverage libraries like Bootstrap, Tailwind CSS, Ant Design, etc., for advanced UI components and styles.
+Naming Conventions
+Folder Names: Use lowercase letters (e.g., components, assets, hooks).
+File Names: Follow PascalCase format for components and camelCase for other files and hooks.
+Component Names: PascalCase (e.g., HomeComp.js, AboutUs.js, ContactUs.js)
+Other Files & Hooks: camelCase (e.g., auth.js, signIn.js, register.js, paymentInfo.js)
+
+
