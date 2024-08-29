@@ -3,16 +3,17 @@ import React from 'react'
 // import Contact from '../pages/Contact'
 // import Services from '../pages/Services'
 // import AboutUs from '../pages/LinkboutUs'
-import { Link } from 'react-router-dom'
-
+import { NavLink} from 'react-router-dom'
+import "./Header.css"
 const Header = () => {
   return (
     <div>
       <ul style={{display:"flex",justifyContent:"space-around",listStyleType:"none"}}>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={"/aboutus"}>aboutus</Link></li>
-        <li><Link to={'/contact'}>contactus</Link></li>
-        <li><Link to={'/services'}>services</Link></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={"/aboutus"}>aboutus</NavLink></li>
+        <li><NavLink to={'/contact'}>contactus</NavLink></li>
+        <li><NavLink to={'/services'}>services</NavLink></li>
+        <li><NavLink to={'/payment'}>payment</NavLink></li>
       </ul>
     </div>
   )
